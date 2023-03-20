@@ -264,6 +264,8 @@
 
 
 
+
+
 @media all and (max-width:640px) {
     .logo-container {
         width: 20%;
@@ -310,6 +312,7 @@
 .body-overall {
     width: 100%;
     margin-top: 100px;
+
     height: calc(100% - 100px);
 }
 
@@ -405,6 +408,48 @@
 
     .body-image-container {
         min-height: 150%;
+    }
+}
+
+@media all and (max-width:445px) {
+    .body-div .text-div {
+        font-size: 2rem;
+    }
+
+    .body-div .text-div p {
+        line-height: 25px;
+        font-size: 1.1rem
+    }
+}
+
+@media all and (max-width: 380px){
+    .paragraph {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .heading {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .body-div .text-div {
+        font-size: 1.5rem;
+    }
+
+    .body-div .text-div p {
+        line-height: 25px;
+        font-size: 1rem
+    }
+
+    .body-div .text-div button {
+        width: 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+@media all and (max-width:375px) {
+    .body-overall {
+        padding-bottom: 50px;
     }
 }
 
@@ -821,14 +866,15 @@ footer .footer-overall {
     width: 90%;
     margin: 0 auto;
     padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     font-weight: 500;
-    text-align: left;
 }
 
 footer .footer-overall .footer-container {
     width: 30%;
-    display: inline-block;
-    vertical-align: top;
     margin-bottom: 40px;
 }
 
@@ -868,17 +914,23 @@ footer .footer-overall .footer-container .link-container .link {
     background-color: rgba(190, 174, 174, 0.5);
 }
 
-.service-offered ul {
+.service-offered {
+    height: 200px;
+    background-color: green;
+}
+
+.service-offered .col-flex {
     padding-top: 20px;
+    /* background-color: red; */
+
+    width: 100%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-    list-style: none;
 }
-
-.service-offered ul li {
-    height: 30px;
-}
-
 
 
 
@@ -942,12 +994,27 @@ footer .footer-overall .footer-container .link-container .link {
 
 
 
-@media all and (max-width:930px) {
-    footer .footer-overall .footer-container {
+@media all and (max-width:900px) {
+    /* footer .footer-overall .footer-container {
         width: 45%;
+    } */
+
+    footer .footer-overall .footer-container h4{
+        font-size: 1rem;
+    }
+
+    .footer-container p{
+        font-size: 0.9rem;
+    }
+
+    .footer-container .overall-contact{
+        font-size: 0.9rem;
+    }
+
+    .footer-container ul li{
+    font-size: 0.9rem;
     }
 }
-
 /* End of footer Section */
 
 
